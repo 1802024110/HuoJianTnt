@@ -1,2 +1,0 @@
-签到:https://www.hjtnt.cc/user/checkin POST
-https://api.htm.fun/api/Wechat/text/?corpid=wwb330a036235c91ea&corpsecret=bpKk0puHo__K2WM2C4SDxZFRDOfxgFJnvW_vQy6HmhA&agentid=1000002&text=测试
