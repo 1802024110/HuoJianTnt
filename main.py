@@ -12,10 +12,6 @@ corpsecret = sys.argv[4]
 # 应用的凭证密钥
 agentid = sys.argv[5]
 # 应用的ID
-""" corpid='wwb330a036235c91ea'
-corpsecret='bpKk0puHo__K2WM2C4SDxZFRDOfxgFJnvW_vQy6HmhA'
-agentid='1000002'
-username, password = '1802024110@qq.com', '2002zengyuan' """
 if __name__ == "__main__":
   print("用户名：" + username)
   print("密码：" + password)
