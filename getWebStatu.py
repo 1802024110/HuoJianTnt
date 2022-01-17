@@ -6,7 +6,7 @@ webList = [
     'https://www.hjtnt.cc/',
     'https://www.hjtnt.com/',
     'https://www.hjtnt.cc/',
-    'hhttps://koozk.com/'
+    'https://koozk.com/'
 ]
 headers = {
   'authority': 'www.hjtnt.buzz',
