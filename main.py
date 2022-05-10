@@ -31,4 +31,5 @@ if __name__ == "__main__":
       session.get(f'https://api.htm.fun/api/Wechat/text/?corpid={corpid}&corpsecret={corpsecret}&agentid={agentid}&text=火箭TNT签到成功')
     else:
       msg = checkin['msg']
-      session.get(f'https://api.htm.fun/api/Wechat/text/?corpid={corpid}&corpsecret={corpsecret}&agentid={agentid}&text=火箭TNT签到失败，原因：{msg}')
+      url = f"https://api.007666.xyz//wecom/send/card?corpid=wwb330a036235c91ea&corpsecret=k6qvy2LJTzkXZtS2kED8hnv53-a780Q6cFhWcPnVpnQ&agentid=1000003&content={msg}&title=火箭TNT签到失败&url=https://github.com/1802024110/HuoJianTnt"
+      response = requests.request("GET", url)
