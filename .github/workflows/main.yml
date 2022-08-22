@@ -37,5 +37,10 @@ jobs:
       run: |
         pip install -r requirements.txt
     - name: Run script
+      dev:
+        AGENTID1: ${{secrets.AGENTID1}}
+        AGENTID2: ${{secrets.AGENTID2}}
+        CORPID: ${{secrets.CORPID}}
+        CORPSECRET: ${{secrets.CORPSECRET}}
       run: |
         python main.py "${{ secrets.username }}" "${{ secrets.password }}" "${{ secrets.corpid }}" "${{ secrets.corpsecret }}" "${{ secrets.agentid }}"
