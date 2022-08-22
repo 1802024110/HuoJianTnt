@@ -37,7 +37,7 @@ jobs:
       run: |
         pip install -r requirements.txt
     - name: Run script
-      dev:
+      env:
         AGENTID1: ${{secrets.AGENTID1}}
         AGENTID2: ${{secrets.AGENTID2}}
         CORPID: ${{secrets.CORPID}}
