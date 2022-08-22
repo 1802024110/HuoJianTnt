@@ -6,8 +6,8 @@ import getWebStatu
 import WeCom_nodream
 baseUrl = getWebStatu.getWebUrl()
 checkUrl = baseUrl + 'user/checkin'
-username = os.environ['username']
-password = os.environ['password']
+username = os.environ['USERNAME']
+password = os.environ['PASSWORD']
 password = sys.argv[2]
 # 初始化企业微信参数
 CORPID = os.environ['CORPID'] 
