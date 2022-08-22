@@ -20,7 +20,7 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   # 这个jobs中的一个任务，名字叫build(随便怎么取)
-  签到任务:
+  Checkout:
     # The type of runner that the job will run on
     # 用来指定这个任务在什么操作系统上跑(服务器是GitHub免费提供的)
     runs-on: ubuntu-latest
