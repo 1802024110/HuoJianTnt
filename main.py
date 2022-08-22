@@ -6,8 +6,12 @@ import getWebStatu
 import WeCom_nodream
 baseUrl = getWebStatu.getWebUrl()
 checkUrl = baseUrl + 'user/checkin'
-username = sys.argv[1]
+username = os.environ['username']
+password = os.environ['password']
 password = sys.argv[2]
+# 初始化企业微信参数
+CORPID = os.environ['CORPID'] 
+CORPSECRET = os.environ['CORPSECRET']
 # 应用的ID
 if __name__ == "__main__":
   loginCode =  login.login(username, password)
@@ -17,10 +21,7 @@ if __name__ == "__main__":
   # 请求签到
   checkin = session.post(checkUrl).text
   checkin = json.loads(checkin)
-  # 初始化企业微信参数
-  CORPID = os.environ['CORPID'] 
-  CORPSECRET = os.environ['CORPSECRET']
-  print("username: ",username,"CORPID: ",CORPID,"获取的参数")
+  print("username: ",username+"似懂非懂","CORPID: ",CORPID+"似懂非懂","获取的参数")
   # 签到状态
   if checkin['ret'] == 1:
     AGENTID1 = os.environ['AGENTID1'] 

@@ -42,5 +42,7 @@ jobs:
         AGENTID2: ${{secrets.AGENTID2}}
         CORPID: ${{secrets.CORPID}}
         CORPSECRET: ${{secrets.CORPSECRET}}
+        USERNAME: ${{secrets.USERNAME}}
+        PASSWORD: ${{secrets.PASSWORD}}
       run: |
-        python main.py "${{ secrets.username }}" "${{ secrets.password }}" "${{ secrets.corpid }}" "${{ secrets.corpsecret }}" "${{ secrets.agentid }}"
+        python main.py
